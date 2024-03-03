@@ -66,6 +66,7 @@
             let user = users.find(u => u.email === email && u.password === password);
             if(user) {
                 alert("Sign in successful!");
+                window.location.href = "dashboard.html";
             } else {
                 alert("Invalid email or password.");
             }
