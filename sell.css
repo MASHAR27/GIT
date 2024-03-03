@@ -19,6 +19,45 @@
     height: 100%;
 }
 
+
+header .logo h1 {
+  color: #fff;
+  font-weight: 300;
+}
+
+header .logo h1 span {
+  font-weight: 600;
+  color: var(--color-green);
+}
+
+header .container1 {
+  display: flex;
+  align-items: center;
+}
+
+header .searchBar {
+  margin-left: auto;
+  color: #fff;
+}
+
+header .header-option {
+  letter-spacing: 0.6px;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+header .header-option svg {
+  margin-right: 1rem;
+  display: inline-flex;
+}
+
+header .currentDetails,
+header .searchBar {
+  display: flex;
+  color: #fff;
+}
+
 .content{
 
     background: white;
@@ -30,7 +69,6 @@
     width: 100%; /* Adjust width as needed */
     height: 100%; /* Adjust height as needed */
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
 }
@@ -45,7 +83,7 @@
   justify-content: center;
   margin-top: 2rem;
   width: 60%;
-  font-size: 80px;
+  font-size: 100px;
 }
 
 .searchBar {
@@ -69,7 +107,6 @@ header{
     padding: 50px 60px 70px;
     text-align: center; 
     border-radius: 20px;
-    height: 80%;
 }    
 .container1 {
     color: white;
