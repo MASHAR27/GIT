@@ -2,95 +2,114 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Sixtyfour', sans-serif;
+    /* font-family: 'Sixtyfour', sans-serif; */
+    font-family: "Madimi One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: large;
 }
+
 
 .container{
     width: 100%;
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-image: linear-gradient(rgba(0,0,50,0.8),rgba(0,0,50,0.8)), url(images/background.png.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.form-box{
+    width: 90%;
+    max-width: 450px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #fff;
+    padding: 50px 60px 70px;
+    text-align: center; 
+    border-radius: 20px;
+}    
+
+.form-box h1{
+    font-size: 30px;
+    margin-bottom: 60px;
+    color: #3c00a0;
+    position: relative;
+}
+
+.form-box h1::after{
+    content: '';
+    width: 30px;
+    height: 4px;
+    border-radius: 3px;
+    background: #3c00a0;
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.input-field{
+    background: #eaeaea;
+    margin: 15px 0;
+    border-radius: 3px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    max-height: 65px;
+    transition: max-height 0.5s;
+    overflow: hidden;
+}
+input{
+    width: 100%;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    padding: 18px 15px;
+}
+.input-field i{
+    margin-left: 15px;
+    color: #999;
 }
 
-.content{
-    text-align: center;
+form p{
+    text-align: left;
+    font-size: 13px;
 }
-
-.content h1{
-    font-size: 95px;
-    color: #fff;
-    margin-bottom: 50px;
-}
-
-.content a{
-    font-size: 20px;
-    color: #fff;
+form p a {
     text-decoration: none;
-    border: 2px solid #fff;
-    padding: 15px 25px;
-    border-radius: 50px;
-    transition: 0.3s;
+    color: #3c00a0;
 }
 
-.content a:hover{
-    background-color: #fff;;
-    color: #000;
-}
-
-.background-clip{
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
-}
-
-@media(min-aspect-ratio:16/9){
-    .background-clip{
-        width:100%;
-        height: auto;
-    }
-}
-
-@media (max-aspect-ratio:16/9){
-    .background-clip{
-        width:auto;
-        height:100%;
-    }
-}
-
-.lorb {
-    width: 300px;
-    margin: 0 auto;
-    padding-top: 30px;
-    color:#fff;
-}
-
-input[type=text], input[type=password] {
+.btn-field{
     width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
 }
-
-button {
-    background-color: blue;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
+.btn-field button{
+    flex-basis: 48%;
+    background: #3c00a0;
+    color: #fff;
+    height: 40px;
+    border-radius: 20px;
+    border: 0;
+    outline: 0;
     cursor: pointer;
-    width: 100%;
-    border:0;    
+    transition: background 1s;
 }
 
-button:hover {
-    opacity: 0.8;
+.input-group{
+    height: 280px
 }
 
-.error {
-    color: red;
+.btn-field button.disable{
+    background: #eaeaea;
+    color: #555;
+}
+
+.madimi-one-regular {
+    font-family: "Madimi One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
