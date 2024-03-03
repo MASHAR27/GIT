@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sell.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <title>Selling Page</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
+    </style>
+</head>
+<body>
+    <!-- <div class="container">
+            <div class="content2">
+                <h1>Sell Your Items</h1>
+                <form id="sellForm">
+                    <div class="form-group">
+                        <label for="itemName">Item Name:</label>
+                        <input type="text" class="form-control" id="itemName" placeholder="Enter item name">
+                    </div>
+                    <div class="form-group">
+                        <label for="itemPhoto">Item Photo:</label>
+                        <input type="file" class="form-control-file" id="itemPhoto">
+                    </div>
+                    <div class="form-group">
+                        <label for="exchangeType">Exchange Type:</label>
+                        <select class="form-control" id="exchangeType">
+                            <option value="money">Money</option>
+                            <option value="other">Other Items</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="sellerLocation">Your Location:</label>
+                        <input type="text" class="form-control" id="sellerLocation" placeholder="Enter your location">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Sell</button>
+                </form>
+            </div>   
+    </div> -->
+<div class="container">
+    <div class="content">
+        <header style="background-color: rgba(0,0,50,0.8); height: 20%">
+            <div class="container1">
+                <div class = "currentDetails left">
+                    <div class = "header-option" style="color: white">
+                        <i data-feather="map-pin"></i>
+                        <span>Welcome, name</span>
+                    </div>
+                </div>
+                <div class = "titles middle">
+                    <div class = "header-option">
+                        Sustainable Marketplace
+                    </div>
+                </div>
+                <div class="searchBar right">
+                    <div class = "header-option">
+                        <a style="border-radius: 4px;border: 2px solid white; color: white" href="intro.html">Logout
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="top-part">
+                <div style="font-size: 50px; color: black">SDGs</div>
+            </div> -->
+        </header> 
+        <div class="form-box">
+            <h1 id="title">Sell Your Items</h1>
+            <form id="sellForm">
+                <div class="form-group">
+                    <label for="itemName">Item Name:</label>
+                    <input type="text" class="form-control" id="itemName" placeholder="Enter item name">
+                </div>
+                <div class="form-group">
+                    <label for="itemPhoto">Item Photo:</label>
+                    <input type="file" class="form-control-file" id="itemPhoto">
+                </div>
+                <div class="form-group">
+                    <label for="exchangeType">Exchange Type:</label>
+                    <select class="form-control" id="exchangeType">
+                        <option value="money">Money</option>
+                        <option value="other">Other Items</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="sellerLocation">Your Location:</label>
+                    <input type="text" class="form-control" id="sellerLocation" placeholder="Enter your location">
+                </div>
+                <button type="submit" class="btn btn-primary">Sell</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+    <script>
+        document.getElementById('sellForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        // Get form values
+        let itemName = document.getElementById('itemName').value;
+        let itemPhoto = document.getElementById('itemPhoto').value; // This will need additional handling
+        let exchangeType = document.getElementById('exchangeType').value;
+        let sellerLocation = document.getElementById('sellerLocation').value;
+
+        // Example: You can perform further validation or send data to backend for processing
+        console.log("Item Name:", itemName);
+        console.log("Item Photo:", itemPhoto); // This will be the file path of the uploaded photo
+        console.log("Exchange Type:", exchangeType);
+        console.log("Seller Location:", sellerLocation);
+
+        // Reset form after submission
+        this.reset();
+        });
+
+    </script>
+</body>
+</html>
